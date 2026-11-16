@@ -1,13 +1,13 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    LEO SUPERCAR MOTORS - STYLESHEET
-   Mobile Week 02 Project - Business Computer
+   à¹‚à¸„à¸£à¸‡à¸à¸²à¸£à¸§à¸´à¸Šà¸²à¸„à¸­à¸¡à¸žà¸´à¸§à¹€à¸•à¸­à¸£à¹Œà¸˜à¸¸à¸£à¸à¸´à¸ˆ - à¸ªà¸±à¸›à¸”à¸²à¸«à¹Œà¸—à¸µà¹ˆ 2 (Mobile Week 02)
    ========================================================================== */
 
 :root {
   --bg-primary: #0b0d12;
   --bg-secondary: #12161f;
-  --bg-card: rgba(22, 27, 37, 0.75);
-  --bg-card-hover: rgba(30, 37, 51, 0.9);
+  --bg-card: rgba(22, 27, 37, 0.78);
+  --bg-card-hover: rgba(30, 37, 51, 0.92);
   --accent-red: #e63946;
   --accent-red-glow: rgba(230, 57, 70, 0.45);
   --accent-gold: #f4a261;
@@ -17,9 +17,9 @@
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(230, 57, 70, 0.3);
+  --border-glow: rgba(230, 57, 70, 0.35);
   --font-heading: 'Orbitron', 'Kanit', sans-serif;
-  --font-body: 'Prompt', sans-serif;
+  --font-body: 'Prompt', 'Kanit', sans-serif;
   --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --radius-md: 14px;
   --radius-lg: 20px;
@@ -46,9 +46,9 @@ body {
   overflow-x: hidden;
   position: relative;
   background-image: 
-    radial-gradient(circle at 15% 20%, rgba(230, 57, 70, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 85% 70%, rgba(0, 242, 254, 0.05) 0%, transparent 45%),
-    linear-gradient(to bottom, #090b0e, #0f1218 50%, #08090c);
+    radial-gradient(circle at 15% 15%, rgba(230, 57, 70, 0.09) 0%, transparent 45%),
+    radial-gradient(circle at 85% 65%, rgba(244, 162, 97, 0.06) 0%, transparent 50%),
+    linear-gradient(to bottom, #090b0e, #0e1218 50%, #08090c);
   min-height: 100vh;
 }
 
@@ -84,7 +84,7 @@ body {
   z-index: 1000;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  background: rgba(11, 13, 18, 0.85);
+  background: rgba(11, 13, 18, 0.88);
   border-bottom: 1px solid var(--border-subtle);
   transition: var(--transition-smooth);
 }
@@ -99,30 +99,38 @@ body {
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: #fff;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
 }
 
 .logo-badge {
   background: linear-gradient(135deg, var(--accent-red), #b71c1c);
   color: white;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 15px var(--accent-red-glow);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .brand-logo span.red {
   color: var(--accent-red);
+}
+
+.brand-tag-thai {
+  font-size: 0.75rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-left: 2px;
 }
 
 .nav-links {
@@ -140,6 +148,9 @@ body {
   transition: var(--transition-smooth);
   position: relative;
   padding: 6px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-link:hover,
@@ -176,10 +187,8 @@ body {
   border: 1px solid rgba(230, 57, 70, 0.35);
   padding: 4px 12px;
   border-radius: 20px;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
 }
 
 .btn-contact {
@@ -188,6 +197,7 @@ body {
   border: none;
   padding: 9px 20px;
   border-radius: 8px;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -219,10 +229,10 @@ body {
    ========================================================================== */
 .hero-section {
   position: relative;
-  min-height: 82vh;
+  min-height: 84vh;
   display: flex;
   align-items: center;
-  padding: 4rem 0 3rem;
+  padding: 4.5rem 0 3.5rem;
   overflow: hidden;
 }
 
@@ -233,7 +243,7 @@ body {
   width: 100%;
   height: 100%;
   background: 
-    linear-gradient(to right, rgba(11, 13, 18, 0.95) 20%, rgba(11, 13, 18, 0.75) 55%, rgba(11, 13, 18, 0.85) 100%),
+    linear-gradient(to right, rgba(11, 13, 18, 0.96) 20%, rgba(11, 13, 18, 0.78) 55%, rgba(11, 13, 18, 0.88) 100%),
     url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
   z-index: 1;
 }
@@ -248,7 +258,7 @@ body {
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: 660px;
 }
 
 .hero-pill {
@@ -256,16 +266,14 @@ body {
   align-items: center;
   gap: 8px;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 6px 18px;
   border-radius: 50px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--accent-gold);
   font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   margin-bottom: 1.25rem;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
 }
 
 .hero-pill i {
@@ -273,13 +281,11 @@ body {
 }
 
 .hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-  font-weight: 900;
-  line-height: 1.12;
-  letter-spacing: 0.5px;
+  font-family: var(--font-body);
+  font-size: clamp(2.3rem, 4.3vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.2;
   margin-bottom: 1.2rem;
-  text-transform: uppercase;
 }
 
 .hero-title .gradient-text {
@@ -289,7 +295,7 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   color: var(--text-secondary);
   margin-bottom: 2rem;
   font-weight: 300;
@@ -359,17 +365,15 @@ body {
 
 .telemetry-val {
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   font-weight: 800;
   color: #fff;
   line-height: 1.1;
 }
 
 .telemetry-label {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
   margin-top: 3px;
 }
 
@@ -397,7 +401,7 @@ body {
 
 .hero-car-img-wrapper {
   position: relative;
-  height: 240px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -419,9 +423,9 @@ body {
   background: rgba(0, 0, 0, 0.75);
   color: var(--accent-gold);
   border: 1px solid rgba(244, 162, 97, 0.4);
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: 6px;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 600;
   backdrop-filter: blur(6px);
 }
@@ -431,10 +435,10 @@ body {
 }
 
 .hero-car-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .hero-car-price {
@@ -456,14 +460,13 @@ body {
 }
 
 .spec-mini-title {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
-  text-transform: uppercase;
 }
 
 .spec-mini-num {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text-primary);
 }
 
@@ -487,7 +490,7 @@ body {
 }
 
 .profile-card {
-  background: linear-gradient(135deg, rgba(20, 25, 36, 0.85) 0%, rgba(12, 15, 22, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(20, 25, 36, 0.88) 0%, rgba(12, 15, 22, 0.96) 100%);
   border: 1px solid rgba(230, 57, 70, 0.35);
   box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px -10px var(--accent-red-glow);
   border-radius: var(--radius-lg);
@@ -539,15 +542,14 @@ body {
 }
 
 .profile-header-title h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
-  letter-spacing: 0.5px;
 }
 
 .profile-header-title p {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
 }
 
@@ -558,9 +560,9 @@ body {
   background: rgba(46, 213, 115, 0.12);
   color: #2ed573;
   border: 1px solid rgba(46, 213, 115, 0.3);
-  padding: 5px 14px;
+  padding: 6px 14px;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
 }
 
@@ -604,28 +606,26 @@ body {
 }
 
 .box-icon {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: var(--accent-red);
   flex-shrink: 0;
 }
 
 .box-content h4 {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
   margin-bottom: 4px;
 }
 
 .box-content p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
 }
@@ -640,7 +640,7 @@ body {
   padding: 1.2rem 1.6rem;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-size: 0.95rem;
   color: var(--text-secondary);
   border-left: 3px solid var(--accent-red);
@@ -648,7 +648,8 @@ body {
 
 .profile-footer-quote i {
   color: var(--accent-red);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -656,22 +657,21 @@ body {
    ========================================================================== */
 .section-header {
   text-align: center;
-  max-width: 650px;
+  max-width: 680px;
   margin: 0 auto 3.5rem;
 }
 
 .section-tag {
   display: inline-block;
   color: var(--accent-red);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 0.5rem;
 }
 
 .section-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: clamp(1.8rem, 3.2vw, 2.5rem);
   font-weight: 800;
   color: #fff;
@@ -705,9 +705,10 @@ body {
   background: rgba(255, 255, 255, 0.04);
   color: var(--text-secondary);
   border: 1px solid var(--border-subtle);
-  padding: 8px 22px;
+  padding: 9px 22px;
   border-radius: 30px;
-  font-size: 0.9rem;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition-smooth);
@@ -772,10 +773,8 @@ body {
   border: 1px solid var(--border-subtle);
   padding: 4px 12px;
   border-radius: 6px;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
   backdrop-filter: blur(8px);
 }
 
@@ -785,9 +784,8 @@ body {
   right: 12px;
   padding: 4px 10px;
   border-radius: 6px;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
 .status-ready {
@@ -810,16 +808,16 @@ body {
 }
 
 .car-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 1.35rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 0.3rem;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .car-engine {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   margin-bottom: 1.2rem;
 }
@@ -828,7 +826,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.28);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 10px 8px;
@@ -847,9 +845,8 @@ body {
 }
 
 .car-spec-box .lbl {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
-  text-transform: uppercase;
 }
 
 .car-card-bottom {
@@ -867,13 +864,12 @@ body {
 }
 
 .car-price-wrap .lbl {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--text-muted);
-  text-transform: uppercase;
 }
 
 .car-price-wrap .price {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--accent-red);
@@ -885,7 +881,8 @@ body {
   border: 1px solid var(--border-subtle);
   padding: 8px 16px;
   border-radius: 8px;
-  font-size: 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition-smooth);
@@ -902,11 +899,110 @@ body {
 }
 
 /* ==========================================================================
+   LOAN CALCULATOR (BUSINESS COMPUTER FEATURE - à¸ªà¸²à¸‚à¸²à¸„à¸­à¸¡à¸˜à¸¸à¸£à¸à¸´à¸ˆ)
+   ========================================================================== */
+.section-calculator {
+  padding: 4.5rem 0 5rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(18, 22, 31, 0.75) 50%, transparent 100%);
+}
+
+.calc-wrapper {
+  background: linear-gradient(135deg, rgba(22, 27, 37, 0.9) 0%, rgba(14, 18, 26, 0.95) 100%);
+  border: 1px solid rgba(230, 57, 70, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.calc-form-side h3 {
+  font-family: var(--font-body);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.calc-form-side p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.calc-inputs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+
+.calc-result-side {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.calc-result-side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-red), var(--accent-gold));
+}
+
+.calc-result-title {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.calc-monthly-val {
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.calc-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.2rem;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+}
+
+.breakdown-row .lbl {
+  color: var(--text-secondary);
+}
+
+.breakdown-row .val {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ==========================================================================
    SERVICES & HIGHLIGHTS
    ========================================================================== */
 .section-services {
   padding: 4rem 0 5rem;
-  background: linear-gradient(180deg, transparent 0%, rgba(18, 22, 31, 0.7) 50%, transparent 100%);
 }
 
 .services-grid {
@@ -944,15 +1040,15 @@ body {
 }
 
 .service-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-family: var(--font-body);
+  font-size: 1.18rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 0.7rem;
 }
 
 .service-card p {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -966,7 +1062,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.82);
   backdrop-filter: blur(10px);
   z-index: 2000;
   display: flex;
@@ -1007,7 +1103,7 @@ body {
   background: none;
   border: none;
   color: var(--text-secondary);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -1017,7 +1113,7 @@ body {
 }
 
 .modal-header h3 {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 1.4rem;
   font-weight: 800;
   color: #fff;
@@ -1025,7 +1121,7 @@ body {
 }
 
 .modal-header p {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
 }
@@ -1036,7 +1132,7 @@ body {
 
 .form-group label {
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 6px;
@@ -1068,7 +1164,7 @@ body {
   padding: 12px;
   border-radius: 8px;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   font-weight: 600;
   cursor: pointer;
   margin-top: 0.8rem;
@@ -1098,27 +1194,26 @@ body {
 }
 
 .footer-brand h4 {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
+  font-family: var(--font-body);
+  font-size: 1.35rem;
   font-weight: 800;
   color: #fff;
   margin-bottom: 0.8rem;
 }
 
 .footer-brand p {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.6;
   max-width: 380px;
 }
 
 .footer-links h5 {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 1rem;
-  letter-spacing: 0.5px;
 }
 
 .footer-links ul {
@@ -1132,8 +1227,11 @@ body {
 .footer-links a {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   transition: var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .footer-links a:hover {
@@ -1147,7 +1245,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
   flex-wrap: wrap;
   gap: 1rem;
@@ -1176,7 +1274,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
 }
 
 .toast-msg.show {
@@ -1205,6 +1303,11 @@ body {
     justify-content: center;
     max-width: 480px;
     margin: 1.5rem auto 0;
+  }
+
+  .calc-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .footer-grid {
@@ -1236,6 +1339,10 @@ body {
   }
 
   .cars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-inputs-grid {
     grid-template-columns: 1fr;
   }
 
